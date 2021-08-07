@@ -42,10 +42,10 @@
     <thead>
   	<tr>
   	  <th class="alert alert-success" role="alert" width="20%"><?php echo TABLE_HEADING_PRICE_LIST_IMAGE; ?></th>
-  	  <th class="alert alert-success" role="alert" width="20%"><?php echo TABLE_HEADING_PRODUCTS; ?></th>
-  	  <th class="alert alert-success" role="alert" width="20%"><?php echo TABLE_HEADING_MODEL; ?></th>
-  	  <th class="alert alert-success" role="alert" width="20%" ><?php echo TABLE_HEADING_MANUFACTURER; ?></th>
-  	  <th class="alert alert-success" role="alert" width="20%" ><?php echo TABLE_HEADING_PRICE; ?></th>
+  	  <th class="alert alert-success" role="alert" width="20%"><?php echo TABLE_HEADING_PRICE_LIST_PRODUCTS; ?></th>
+  	  <th class="alert alert-success" role="alert" width="20%"><?php echo TABLE_HEADING_PRICE_LIST_MODEL; ?></th>
+  	  <th class="alert alert-success" role="alert" width="20%" ><?php echo TABLE_HEADING_PRICE_LIST_MANUFACTURER; ?></th>
+  	  <th class="alert alert-success" role="alert" width="20%" ><?php echo TABLE_HEADING_PRICE_LIST_PRICE; ?></th>
   	</tr>
     </thead>
   </table>
