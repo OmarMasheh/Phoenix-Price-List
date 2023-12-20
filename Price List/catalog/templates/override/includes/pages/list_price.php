@@ -58,11 +58,10 @@
 <div class="contentText">
   <table border="0" width="100%" cellspacing="20" cellpadding="20">
     <tr>
-  	    	  <td  width="20%"><?php echo (UPCOMING_IMAGE_WIDTH + 20) . 'px;">&nbsp;' . tep_image('images/' . $list_price['products_image'], $list_price['products_name'], '50%', '50%') . '&nbsp;&nbsp;'; ?></td>
-
-      <td  width="20%"><?php echo '&nbsp;&nbsp;<a href="' . tep_href_link('product_info.php', 'products_id=' . $list_price['products_id']) . '">' . $list_price['products_name'] . '</a>'; ?></td>
-  	  <td  width="20%"><?php echo '<a href="' . tep_href_link('product_info.php', 'products_id=' . $list_price['products_id']) . '">' . $list_price['products_model'] . '</a>&nbsp;'; ?></td>
-  	  <td  width="20%"><?php echo '<a href="' . tep_href_link('index.php', 'manufacturers_id=' . $list_price['manufacturers_id']) . '">' . $list_price['manufacturers_name'] . '</a>'; ?></td>
+     <td  width="20px"><?php echo '&nbsp;' . tep_image('images/' . $list_price['products_image'], $list_price['products_name'], '50%', '50%') . '&nbsp;&nbsp;'; ?></td>
+     <td  width="20%"><?php echo '&nbsp;&nbsp;<a href="' . tep_href_link('product_info.php', 'products_id=' . $list_price['products_id']) . '">' . $list_price['products_name'] . '</a>'; ?></td>
+     <td  width="20%"><?php echo '<a href="' . tep_href_link('product_info.php', 'products_id=' . $list_price['products_id']) . '">' . $list_price['products_model'] . '</a>&nbsp;'; ?></td>
+     <td  width="20%"><?php echo '<a href="' . tep_href_link('index.php', 'manufacturers_id=' . $list_price['manufacturers_id']) . '">' . $list_price['manufacturers_name'] . '</a>'; ?></td>
 <?php
   if ($new_price = tep_get_products_special_price($list_price['products_id'])) {
 	echo '<td width="20%"><span style="color: #ff0000;"><del>' .  $currencies->display_price($list_price['products_price'], tep_get_tax_rate($list_price['products_tax_class_id'])) . '</del></span><br />' . $currencies->display_price($new_price, tep_get_tax_rate($list_price['products_tax_class_id'])) . '</td>';
